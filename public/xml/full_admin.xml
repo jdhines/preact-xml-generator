@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mat:MessageAttributesTemplates xmlns:mat="http://www.axway.com/Schemas/2011/mat">
+	<mat:MessageAttributesTemplate>
+		<mat:Name>CLNID_GRKGRANT_FLTGRKGRNT</mat:Name>
+		<mat:Description>CLNID_GRKGRANT_FLTGRKGRNT</mat:Description>
+		<mat:MessageAttributes>
+			<mat:Attribute name="SPS_ClientTicker" value="CLNID"/>
+			<mat:Attribute name="SPS_RkSourceVersion" value="NULL"/>
+			<mat:Attribute name="SPS_extCsv" value="true"/>
+			<mat:Attribute name="SPS_Direction" value="Inbound"/>
+			<mat:Attribute name="SPS_LayoutName" value="FirstLine Template Grant (Global)"/>
+			<mat:Attribute name="SPS_LayoutID" value="FLTGRKGRNT"/>
+			<mat:Attribute name="SPS_extZip" value="false"/>
+			<mat:Attribute name="SPS_postMapFlag" value="false"/>
+			<mat:Attribute name="SPS_RkSource" value="Fidelity"/>
+			<mat:Attribute name="SPS_chkFirstLine" value="true"/>
+			<mat:Attribute name="SPS_FileNamePattern" value="PSWGrantLoad_#ClientId#_#FidFileId#.csv"/>
+			<mat:Attribute name="SPS_Destination" value="spsgrkftp-prd.fmr.com|spsftpp"/>
+			<mat:Attribute name="SPS_FilePath" value="NULL"/>
+			<mat:Attribute name="SPS-DTE" value="true"/>
+			<mat:Attribute name="SPS_extXml" value="false"/>
+			<mat:Attribute name="SPS_chkFull" value="false"/>
+			<mat:Attribute name="SPS_FileGroup" value="Stock: Grant (Global)"/>
+			<mat:Attribute name="SPS_Sender" value="Client"/>
+			<mat:Attribute name="SPS_extTxt" value="true"/>
+			<mat:Attribute name="SPS_ClientRoutingId" value="YV0008P"/>
+			<mat:Attribute name="SPS_FileGroupID" value="GRKGRANT"/>
+			<mat:Attribute name="SPS_preMapFlag" value="false"/>
+			<mat:Attribute name="SPS_chkChangesOnly" value="false"/>
+		</mat:MessageAttributes>
+	</mat:MessageAttributesTemplate>
+	<mat:MessageAttributesTemplate>
+		<mat:Name>CLNID_BLCKMGMT_FLTBLK</mat:Name>
+		<mat:Description>CLNID_BLCKMGMT_FLTBLK</mat:Description>
+		<mat:MessageAttributes>
+			<mat:Attribute name="SPS_ClientTicker" value="CLNID"/>
+			<mat:Attribute name="SPS_RkSourceVersion" value="NULL"/>
+			<mat:Attribute name="SPS_extCsv" value="true"/>
+			<mat:Attribute name="SPS_Direction" value="Inbound"/>
+			<mat:Attribute name="SPS_LayoutName" value="Blackout-In PSW"/>
+			<mat:Attribute name="SPS_LayoutID" value="FLTBLK"/>
+			<mat:Attribute name="SPS_extZip" value="false"/>
+			<mat:Attribute name="SPS_postMapFlag" value="false"/>
+			<mat:Attribute name="SPS_RkSource" value="Fidelity"/>
+			<mat:Attribute name="SPS_chkFirstLine" value="false"/>
+			<mat:Attribute name="SPS_FileNamePattern" value="BLKOUT_#FidFileId#.csv"/>
+			<mat:Attribute name="SPS_Destination" value="INFASPSODS-FTP.fmr.com|inffftpp"/>
+			<mat:Attribute name="SPS_FilePath" value="incoming/SPS_ODS_AUTOEX"/>
+			<mat:Attribute name="SPS-DTE" value="true"/>
+			<mat:Attribute name="SPS_extXml" value="false"/>
+			<mat:Attribute name="SPS_chkFull" value="true"/>
+			<mat:Attribute name="SPS_FileGroup" value="Stock-Partial Admin: Blackout Management"/>
+			<mat:Attribute name="SPS_Sender" value="Client"/>
+			<mat:Attribute name="SPS_extTxt" value="true"/>
+			<mat:Attribute name="SPS_ClientRoutingId" value="YV0008P"/>
+			<mat:Attribute name="SPS_FileGroupID" value="BLCKMGMT"/>
+			<mat:Attribute name="SPS_preMapFlag" value="true"/>
+			<mat:Attribute name="SPS_chkChangesOnly" value="true"/>
+		</mat:MessageAttributes>
+	</mat:MessageAttributesTemplate>
+	<mat:MessageAttributesTemplate>
+		<mat:Name>CLNID_BLCKMGMT_FLTBLKOVR</mat:Name>
+		<mat:Description>CLNID_BLCKMGMT_FLTBLKOVR</mat:Description>
+		<mat:MessageAttributes>
+			<mat:Attribute name="SPS_ClientTicker" value="CLNID"/>
+			<mat:Attribute name="SPS_RkSourceVersion" value="NULL"/>
+			<mat:Attribute name="SPS_extCsv" value="true"/>
+			<mat:Attribute name="SPS_Direction" value="Inbound"/>
+			<mat:Attribute name="SPS_LayoutName" value="Blackout Override-In PSW"/>
+			<mat:Attribute name="SPS_LayoutID" value="FLTBLKOVR"/>
+			<mat:Attribute name="SPS_extZip" value="false"/>
+			<mat:Attribute name="SPS_postMapFlag" value="false"/>
+			<mat:Attribute name="SPS_RkSource" value="Fidelity"/>
+			<mat:Attribute name="SPS_chkFirstLine" value="false"/>
+			<mat:Attribute name="SPS_FileNamePattern" value="BLKOUT_#FidFileId#.csv"/>
+			<mat:Attribute name="SPS_Destination" value="INFASPSODS-FTP.fmr.com|inffftpp"/>
+			<mat:Attribute name="SPS_FilePath" value="incoming/SPS_ODS_AUTOEX"/>
+			<mat:Attribute name="SPS-DTE" value="true"/>
+			<mat:Attribute name="SPS_extXml" value="false"/>
+			<mat:Attribute name="SPS_chkFull" value="false"/>
+			<mat:Attribute name="SPS_FileGroup" value="Stock-Partial Admin: Blackout Management"/>
+			<mat:Attribute name="SPS_Sender" value="Client"/>
+			<mat:Attribute name="SPS_extTxt" value="true"/>
+			<mat:Attribute name="SPS_ClientRoutingId" value="YV0008P"/>
+			<mat:Attribute name="SPS_FileGroupID" value="BLCKMGMT"/>
+			<mat:Attribute name="SPS_preMapFlag" value="true"/>
+			<mat:Attribute name="SPS_chkChangesOnly" value="true"/>
+		</mat:MessageAttributes>
+	</mat:MessageAttributesTemplate>
+	<mat:MessageAttributesTemplate>
+		<mat:Name>CLNID_GRKDMR_GRKDMR</mat:Name>
+		<mat:Description>CLNID_GRKDMR_GRKDMR</mat:Description>
+		<mat:MessageAttributes>
+			<mat:Attribute name="SPS_ClientTicker" value="CLNID"/>
+			<mat:Attribute name="SPS_RkSourceVersion" value="NULL"/>
+			<mat:Attribute name="SPS_extCsv" value="true"/>
+			<mat:Attribute name="SPS_Direction" value="Inbound"/>
+			<mat:Attribute name="SPS_LayoutName" value="Global DMR"/>
+			<mat:Attribute name="SPS_LayoutID" value="GRKDMR"/>
+			<mat:Attribute name="SPS_extZip" value="false"/>
+			<mat:Attribute name="SPS_postMapFlag" value="false"/>
+			<mat:Attribute name="SPS_RkSource" value="Fidelity"/>
+			<mat:Attribute name="SPS_chkFirstLine" value="true"/>
+			<mat:Attribute name="SPS_FileNamePattern" value="PSWDMR_#ClientId#_#FidFileId#.csv"/>
+			<mat:Attribute name="SPS_Destination" value="spsgrkftp-prd.fmr.com|spsftpp"/>
+			<mat:Attribute name="SPS_FilePath" value="NULL"/>
+			<mat:Attribute name="SPS-DTE" value="true"/>
+			<mat:Attribute name="SPS_extXml" value="false"/>
+			<mat:Attribute name="SPS_chkFull" value="false"/>
+			<mat:Attribute name="SPS_FileGroup" value="Stock: DMR (Global)"/>
+			<mat:Attribute name="SPS_Sender" value="Client"/>
+			<mat:Attribute name="SPS_extTxt" value="true"/>
+			<mat:Attribute name="SPS_ClientRoutingId" value="YV0008P"/>
+			<mat:Attribute name="SPS_FileGroupID" value="GRKDMR"/>
+			<mat:Attribute name="SPS_preMapFlag" value="false"/>
+			<mat:Attribute name="SPS_chkChangesOnly" value="false"/>
+		</mat:MessageAttributes>
+	</mat:MessageAttributesTemplate>
+	<mat:MessageAttributesTemplate>
+		<mat:Name>CLNID_GRKDMR_GRKPTD</mat:Name>
+		<mat:Description>CLNID_GRKDMR_GRKPTD</mat:Description>
+		<mat:MessageAttributes>
+			<mat:Attribute name="SPS_ClientTicker" value="CLNID"/>
+			<mat:Attribute name="SPS_RkSourceVersion" value="NULL"/>
+			<mat:Attribute name="SPS_extCsv" value="true"/>
+			<mat:Attribute name="SPS_Direction" value="Inbound"/>
+			<mat:Attribute name="SPS_LayoutName" value="Global PTD"/>
+			<mat:Attribute name="SPS_LayoutID" value="GRKPTD"/>
+			<mat:Attribute name="SPS_extZip" value="false"/>
+			<mat:Attribute name="SPS_postMapFlag" value="false"/>
+			<mat:Attribute name="SPS_RkSource" value="Fidelity"/>
+			<mat:Attribute name="SPS_chkFirstLine" value="true"/>
+			<mat:Attribute name="SPS_FileNamePattern" value="PSWPTD_#ClientId#_#FidFileId#.csv"/>
+			<mat:Attribute name="SPS_Destination" value="spsgrkftp-prd.fmr.com|spsftpp"/>
+			<mat:Attribute name="SPS_FilePath" value="NULL"/>
+			<mat:Attribute name="SPS-DTE" value="true"/>
+			<mat:Attribute name="SPS_extXml" value="false"/>
+			<mat:Attribute name="SPS_chkFull" value="false"/>
+			<mat:Attribute name="SPS_FileGroup" value="Stock: DMR (Global)"/>
+			<mat:Attribute name="SPS_Sender" value="Client"/>
+			<mat:Attribute name="SPS_extTxt" value="true"/>
+			<mat:Attribute name="SPS_ClientRoutingId" value="YV0008P"/>
+			<mat:Attribute name="SPS_FileGroupID" value="GRKDMR"/>
+			<mat:Attribute name="SPS_preMapFlag" value="false"/>
+			<mat:Attribute name="SPS_chkChangesOnly" value="false"/>
+		</mat:MessageAttributes>
+	</mat:MessageAttributesTemplate>
+	<mat:MessageAttributesTemplate>
+		<mat:Name>CLNID_GBINDICTVE_GBPPTPSW</mat:Name>
+		<mat:Description>CLNID_GBINDICTVE_GBPPTPSW</mat:Description>
+		<mat:MessageAttributes>
+			<mat:Attribute name="SPS_ClientTicker" value="CLNID"/>
+			<mat:Attribute name="SPS_RkSourceVersion" value="NULL"/>
+			<mat:Attribute name="SPS_extCsv" value="true"/>
+			<mat:Attribute name="SPS_Direction" value="Inbound"/>
+			<mat:Attribute name="SPS_LayoutName" value="Global Indicative - Upload"/>
+			<mat:Attribute name="SPS_LayoutID" value="GBPPTPSW"/>
+			<mat:Attribute name="SPS_extZip" value="false"/>
+			<mat:Attribute name="SPS_postMapFlag" value="false"/>
+			<mat:Attribute name="SPS_RkSource" value="Fidelity"/>
+			<mat:Attribute name="SPS_chkFirstLine" value="false"/>
+			<mat:Attribute name="SPS_FileNamePattern" value="PSW_IFDP_#FidFileId#.txt"/>
+			<mat:Attribute name="SPS_Destination" value="wi-integratedfeed-prd.gslb.fmr.com|Ifpprod|SPS"/>
+			<mat:Attribute name="SPS_FilePath" value="incoming/SPS_ODS_AUTOEX"/>
+			<mat:Attribute name="SPS-DTE" value="true"/>
+			<mat:Attribute name="SPS_extXml" value="false"/>
+			<mat:Attribute name="SPS_chkFull" value="false"/>
+			<mat:Attribute name="SPS_FileGroup" value="Stock: Indicative (Global)"/>
+			<mat:Attribute name="SPS_Sender" value="Client"/>
+			<mat:Attribute name="SPS_extTxt" value="true"/>
+			<mat:Attribute name="SPS_ClientRoutingId" value="YV0008P"/>
+			<mat:Attribute name="SPS_FileGroupID" value="GBINDICTVE"/>
+			<mat:Attribute name="SPS_preMapFlag" value="false"/>
+			<mat:Attribute name="SPS_chkChangesOnly" value="true"/>
+		</mat:MessageAttributes>
+	</mat:MessageAttributesTemplate>
+</mat:MessageAttributesTemplates>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mat:MessageAttributesTemplates xmlns:mat="http://www.axway.com/Schemas/2011/mat">
+	<mat:MessageAttributesTemplate>
+		<mat:Name>CLNID_GBINDICTVE_GBPPTTX</mat:Name>
+		<mat:Description>CLNID_GBINDICTVE_GBPPTTX</mat:Description>
+		<mat:MessageAttributes>
+			<mat:Attribute name="SPS_ClientTicker" value="CLNID"/>
+			<mat:Attribute name="SPS_RkSourceVersion" value="NULL"/>
+			<mat:Attribute name="SPS_extCsv" value="true"/>
+			<mat:Attribute name="SPS_Direction" value="Inbound"/>
+			<mat:Attribute name="SPS_LayoutName" value="Global Indicative and Tax"/>
+			<mat:Attribute name="SPS_LayoutID" value="GBPPTTX"/>
+			<mat:Attribute name="SPS_extZip" value="false"/>
+			<mat:Attribute name="SPS_postMapFlag" value="false"/>
+			<mat:Attribute name="SPS_RkSource" value="EASi"/>
+			<mat:Attribute name="SPS_chkFirstLine" value="false"/>
+			<mat:Attribute name="SPS_FileNamePattern" value="GPID_FAST_FESCOID_GLOBAL.txt"/>
+			<mat:Attribute name="SPS_Destination" value="wi-integratedfeed-prd.gslb.fmr.com|Ifpprod|SPS"/>
+			<mat:Attribute name="SPS_FilePath" value="incoming/SPS_ODS_AUTOEX"/>
+			<mat:Attribute name="SPS-DTE" value="true"/>
+			<mat:Attribute name="SPS_extXml" value="false"/>
+			<mat:Attribute name="SPS_chkFull" value="true"/>
+			<mat:Attribute name="SPS_FileGroup" value="Stock: Indicative (Global)"/>
+			<mat:Attribute name="SPS_Sender" value="Vendor"/>
+			<mat:Attribute name="SPS_extTxt" value="true"/>
+			<mat:Attribute name="SPS_ClientRoutingId" value="YV0008P"/>
+			<mat:Attribute name="SPS_FileGroupID" value="GBINDICTVE"/>
+			<mat:Attribute name="SPS_preMapFlag" value="false"/>
+			<mat:Attribute name="SPS_chkChangesOnly" value="true"/>
+		</mat:MessageAttributes>
+	</mat:MessageAttributesTemplate>
+</mat:MessageAttributesTemplates>
